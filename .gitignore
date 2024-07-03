@@ -1,0 +1,5 @@
+.vs
+*.exe
+LUDO_GAME/.vs/
+LUDO_GAME/x64/
+LUDO_GAME/Debug/
