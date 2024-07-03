@@ -21,7 +21,8 @@ int main()
 {
 	sf::RenderWindow window(sf::VideoMode(800, 800), "SFML works!");
 	// Seed the random number generator with the current time
-	std::srand(62704);
+	std::srand(std::time(0));
+	// std::srand(62704);
 
 	window.setFramerateLimit(60);
 	Board board = Board(&window);
@@ -151,45 +152,6 @@ int main()
 			break;
 		}*/
 	}
-	//while (window.isOpen()) {
-	//	sf::Font font;
-	//	sf::Text text;
-	//	if (!font.loadFromFile("arial.ttf"))
-	//	{
-	//		std::cout << "Error in loading the font";
-	//	}
-	//	text.setFont(font);
-	//	text.setCharacterSize(80);
-	//	text.setStyle(sf::Text::Bold);
-	//	while (window.pollEvent(event))
-	//	{
-	//		if (event.type == sf::Event::Closed) {
-	//			window.close();
-	//		}
-
-	//	}
-	//	switch ((turn - 1) % 4) {
-	//	case 0:
-	//		text.setFillColor(sf::Color::Red);
-	//		text.setString("Red Wins");
-	//		break;
-	//	case 1:
-	//		text.setFillColor(sf::Color::Green);
-	//		text.setString("Green Wins");
-	//		break;
-	//	case 2:
-	//		text.setFillColor(sf::Color::Yellow);
-	//		text.setString("Yellow Wins");
-	//		break;
-	//	case 3:
-	//		text.setFillColor(sf::Color::Blue);
-	//		text.setString("Blue Wins");
-	//		break;
-	//	}
-	//	window.clear();
-	//	window.draw(text);
-	//	//window.display();
-	//}
 
 	return 0;
 }

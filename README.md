@@ -11,7 +11,7 @@
 **We are designing the simple LUDO Game, there will be either two or four players who will play the game at once and there will be four pieces(Goti). Each player will be generated a random number and he will be moving his piece according to number. If A Person gets a (six 6) as random generated number he will be allowed to move his piece(Goti), else he will wait for six to come. When one piece of any player will move all the four sections of four players, he will have to move six additional steps to clear one piece. If player1 has a piece on a particular place and player2's piece came on same place then player2 will beat player1's piece and player1 again will have to have six(6) to move that beaten piece.**  
 
 ## ***Data Structures Utilization***  
-**While developing a LUDO game, we should have focus on game board which is actually a grid, the grid where the players' pieces move and interact. The Data Structures Will Be Used Mostly An 2D-Array or a singly/doubly cricular linked lists(will be used according to situation). Arrays and lists which allow us to store information about position of players and pieces. Each cell in the grid can be an element in the array or list(Or we may use some other approach).**
+**While developing a LUDO game, we should have focus on game board which is actually a grid(vector2f), the grid where the players' pieces move and interact. The Data Structures Will Be Used Mostly An 2D-Array. Arrays and lists which allow us to store information about position of players and pieces. Each cell in the grid can be an element in the array(vector2f).**
 
 ## ***Objectives***
 **Digital Transformation: 
@@ -30,7 +30,7 @@ Have Developed a user-friendly console-based interface for an enjoyable gaming e
 Have Implemented turn-based gameplay, allowing each player to roll the dice and move their pieces.**
 
 **Develop a Basic Turn-Based Ludo Game Prototype:
-Create a prototype of a turn-based Ludo game featuring two players: one human and one computer-controlled.**
+Create a prototype of a turn-based Ludo game featuring multiple players**
 
 **Winning Conditions: 
 Have defined winning conditions for players based on reaching the designated positions on the board.**
@@ -56,8 +56,7 @@ This phase involves setting up the initial state of the game. We'll create the L
 In this step, we will implement the core game logic and rules of Ludo. This will include handling dice rolling, token movement, capturing opponents' tokens, entering the home column, moving through safe zones, and determining winning conditions. We will ensure that our game follows the international rules.
 * **Testing and Debugging** :
 In this step, we will thoroughly test our Ludo game. Furthermore, we will identify and fix any bugs or issues that arise. Moreover, we will conduct various test cases to validate the functionality and correctness of the game. In the end, we will ensure that our game runs according to the points mentioned in the proposal.
-* **Networking(Optional)** :
-This will be a valuable feature when two or more players are engaged in the game. It allows users to play from their own PCs instead of having to share one PC. Furthermore, it significantly enhances the user experience of playing LUDO.
+
 
 ## ***Challenges And Risks***  
 **Ludo is not a simple game. It involves intricate rules and gameplay mechanics. Implementing and testing the game logic to ensure it adheres to the official Ludo rules can be a significant challenge. Ludo is traditionally a multiplayer game, so implementing multiplayer functionality, either locally or online, can be a complex and time-consuming task. Testing a game like Ludo thoroughly is crucial to identify and fix bugs, ensure fair gameplay, and provide a smooth user experience. Testing becomes more challenging as the game complexity increases.**
